@@ -1,0 +1,49 @@
+.main-navigation {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 3.5rem;
+    background: #01d1d1;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.main-navigation__logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.main-navigation__items ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-navigation__items li {
+    margin: 1rem;
+}
+/* navlink will be rendered as anchor tag */
+.main-navigation__items a {
+    text-decoration: none;
+    color: rgb(18, 6, 41);
+    /* transform is not applicable to inline elements such as <a>. You could display the link as inline-block or block to get transform to work: */
+    display: inline-block;
+    transition: 0.2s all;
+}
+
+.main-navigation__items a:active,
+.main-navigation__items a:hover {
+    color: rgb(209, 200, 68);
+    transform: scale(1.2);
+}
+
+.main-navigation__items a.active {
+    color: rgb(209, 200, 68);
+}

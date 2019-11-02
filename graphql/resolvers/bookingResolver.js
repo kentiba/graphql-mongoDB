@@ -29,7 +29,7 @@ module.exports = {
             throw err;
         }
     },
-
+    // TODO: cant book more than once
     bookEvent: async (args, req) => {
         if (!req.isAuth) {
             throw new Error('Unauthenticated!');

@@ -8,12 +8,13 @@ const bookingSchema = new Schema(
             type: Schema.Types.ObjectId,
             ref: 'Event',
         },
+
         user: {
             type: Schema.Types.ObjectId,
             ref: 'User',
-            unique: true,
         },
     },
+
     {
         // this will add createdAt & updatedAt automatically
         timestamps: true,
